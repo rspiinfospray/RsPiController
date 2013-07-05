@@ -59,16 +59,21 @@ public class UpdaterUI {
 
 
 
-	public static void AutoPiloteOn(ControllerActivity activity) {
+	public static void autoPiloteOn(ControllerActivity activity) {
 		AutoPiloteOnAsyncUI asyncAutoPiloteOn = new AutoPiloteOnAsyncUI(activity);
 		asyncAutoPiloteOn.execute();		
 	}
 
 
 
-	public static void AutoPiloteOff(ControllerActivity activity) {
+	public static void autoPiloteOff(ControllerActivity activity) {
 		AutoPiloteOffAsyncUI asyncAutoPiloteOff = new AutoPiloteOffAsyncUI(activity);
 		asyncAutoPiloteOff.execute();
+	}
+	
+	public static void puissance(ControllerActivity activity, int puissance) {
+		PuissanceAsyncUI asyncPuissance = new PuissanceAsyncUI(activity, puissance);
+		asyncPuissance.execute(puissance);
 	}
 	
 	

@@ -117,9 +117,9 @@ public class CommonCallWs {
 
 
 
-	public static Boolean callPuissanceWs(Long puissance) {
+	public static Boolean callPuissanceWs(Integer puissance) {
 		SoapObject requete = new SoapObject(ConstantsWs.NAMESPACE, ConstantsWs.METHODE_NAME_PUISSANCE);
-		requete.addProperty("arg0", puissance);
+		requete.addProperty("arg0", Long.valueOf(puissance));
 
 		SoapSerializationEnvelope envelope=  new SoapSerializationEnvelope(SoapEnvelope.VER11);
 		envelope.setOutputSoapObject(requete);		

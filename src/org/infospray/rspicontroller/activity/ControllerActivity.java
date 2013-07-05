@@ -7,6 +7,7 @@ import org.infospray.rspicontroller.listener.AvancerListener;
 import org.infospray.rspicontroller.listener.DroiteListener;
 import org.infospray.rspicontroller.listener.GaucheListener;
 import org.infospray.rspicontroller.listener.ReculerListener;
+import org.infospray.rspicontroller.listener.SeekBarChangeListener;
 import org.infospray.rspicontroller.listener.StopListener;
 
 
@@ -14,6 +15,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.widget.Button;
+import android.widget.SeekBar;
 import android.widget.ToggleButton;
 
 
@@ -26,6 +28,7 @@ public class ControllerActivity extends Activity {
 	private Button 				buttonStop;
 	private Button 				buttonAlignerRoues;
 	private ToggleButton 		buttonAutoPilote;
+	private SeekBar				seekBarPuissance;
 	
 	
 
@@ -41,6 +44,7 @@ public class ControllerActivity extends Activity {
 		this.buttonStop = (Button)findViewById(R.id.buttonStop);
 		this.buttonAlignerRoues = (Button)findViewById(R.id.buttonAlignerRoues);
 		this.buttonAutoPilote = (ToggleButton)findViewById(R.id.toggleButtonAuto);
+		this.seekBarPuissance = (SeekBar)findViewById(R.id.seekBarPuissance);
 		
 		
 		this.buttonAvancer.setOnClickListener(new AvancerListener(this));
@@ -50,9 +54,8 @@ public class ControllerActivity extends Activity {
 		this.buttonStop.setOnClickListener(new StopListener(this));
 		this.buttonAlignerRoues.setOnClickListener(new AlignerRouesListener(this));
 		this.buttonAutoPilote.setOnClickListener(new AutoPiloteListener(this));
-		
-		
-		
+		this.seekBarPuissance .setOnSeekBarChangeListener(new SeekBarChangeListener(this));
+				
     }
 
 
@@ -102,6 +105,26 @@ public class ControllerActivity extends Activity {
 
 	public void setButtonAutoPilote(ToggleButton buttonAutoPilote) {
 		this.buttonAutoPilote = buttonAutoPilote;
+	}
+
+
+	public Button getButtonStop() {
+		return buttonStop;
+	}
+
+
+	public void setButtonStop(Button buttonStop) {
+		this.buttonStop = buttonStop;
+	}
+
+
+	public SeekBar getSeekBarPuissance() {
+		return seekBarPuissance;
+	}
+
+
+	public void setSeekBarPuissance(SeekBar seekBarPuissance) {
+		this.seekBarPuissance = seekBarPuissance;
 	}
     
     

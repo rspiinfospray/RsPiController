@@ -22,11 +22,11 @@ public class AutoPiloteListener implements OnClickListener {
 		String result = this.activity.getButtonAutoPilote().getText().toString();
 		
 		if(result.equals("ON")){
-			 UpdaterUI.AutoPiloteOn(activity);
+			 UpdaterUI.autoPiloteOn(activity);
 			 System.out.println("ON AUTO PILOTE");
 		}
 		if(result.equals("OFF")){
-			UpdaterUI.AutoPiloteOff(activity);
+			UpdaterUI.autoPiloteOff(activity);
 			System.out.println("OFF AUTO PILOTE");
 		}
 		

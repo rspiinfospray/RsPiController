@@ -12,7 +12,7 @@ import android.os.AsyncTask;
 
 
 
-public class PuissanceAsyncUI extends AsyncTask<Long, Integer, Boolean> {
+public class PuissanceAsyncUI extends AsyncTask<Integer, Integer, Boolean> {
 
 
 	private ControllerActivity		activity;
@@ -20,7 +20,7 @@ public class PuissanceAsyncUI extends AsyncTask<Long, Integer, Boolean> {
 	
 	
 	
-	public PuissanceAsyncUI(ControllerActivity activity) {
+	public PuissanceAsyncUI(ControllerActivity activity, Integer puissance) {
 		super();
 		this.activity = activity;
 	}
@@ -46,7 +46,7 @@ public class PuissanceAsyncUI extends AsyncTask<Long, Integer, Boolean> {
 
 
 	@Override
-	protected Boolean doInBackground(Long... params) {
+	protected Boolean doInBackground(Integer... params) {
 
 		return CommonCallWs.callPuissanceWs(params[0]);
 	}
