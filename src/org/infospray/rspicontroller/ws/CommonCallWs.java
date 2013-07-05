@@ -4,9 +4,6 @@ import org.ksoap2.SoapEnvelope;
 import org.ksoap2.serialization.SoapObject;
 import org.ksoap2.serialization.SoapSerializationEnvelope;
 
-import android.widget.Toast;
-import android.widget.ToggleButton;
-
 public class CommonCallWs {
 
 
@@ -27,7 +24,6 @@ public class CommonCallWs {
 
 		try {
 			transport.call(ConstantsWs.SOAP_ACTION_AVANCER, envelope);
-			SoapObject result = (SoapObject) envelope.getResponse();
 
 		} catch (Exception e) {
 			System.out.println("WS AVANCER ERROR");
@@ -49,8 +45,6 @@ public class CommonCallWs {
 
 		try {
 			transport.call(ConstantsWs.SOAP_ACTION_STOP, envelope);
-			SoapObject result = (SoapObject) envelope.getResponse();
-
 		} catch (Exception e) {
 			System.out.println("WS STOP ERROR");
 			return false;
@@ -71,8 +65,6 @@ public class CommonCallWs {
 
 		try {
 			transport.call(ConstantsWs.SOAP_ACTION_RECULER, envelope);
-			SoapObject result = (SoapObject) envelope.getResponse();
-
 		} catch (Exception e) {
 			System.out.println("WS RECULER ERROR");
 			return false;
@@ -93,7 +85,6 @@ public class CommonCallWs {
 
 		try {
 			transport.call(ConstantsWs.SOAP_ACTION_GAUCHE, envelope);
-			SoapObject result = (SoapObject) envelope.getResponse();
 
 		} catch (Exception e) {
 			System.out.println("WS GAUCHE ERROR");
@@ -115,7 +106,6 @@ public class CommonCallWs {
 
 		try {
 			transport.call(ConstantsWs.SOAP_ACTION_DROITE, envelope);
-			SoapObject result = (SoapObject) envelope.getResponse();
 
 		} catch (Exception e) {
 			System.out.println("WS DROITE ERROR");
@@ -138,7 +128,6 @@ public class CommonCallWs {
 
 		try {
 			transport.call(ConstantsWs.SOAP_ACTION_PUISSANCE, envelope);
-			SoapObject result = (SoapObject) envelope.getResponse();
 
 		} catch (Exception e) {
 			System.out.println("WS PUISSANCE ERROR");
@@ -160,7 +149,6 @@ public class CommonCallWs {
 
 		try {
 			transport.call(ConstantsWs.SOAP_ACTION_ALIGNER_ROUE_MILIEU, envelope);
-			SoapObject result = (SoapObject) envelope.getResponse();
 
 		} catch (Exception e) {
 			System.out.println("WS ROUE MILLIEU ERROR");
@@ -182,7 +170,6 @@ public class CommonCallWs {
 
 		try {
 			transport.call(ConstantsWs.SOAP_ACTION_PILOTE_AUTO_ON, envelope);
-			SoapObject result = (SoapObject) envelope.getResponse();
 
 		} catch (Exception e) {
 			System.out.println("WS PILOTE AUTO ON ERROR");
@@ -204,7 +191,6 @@ public class CommonCallWs {
 
 		try {
 			transport.call(ConstantsWs.SOAP_ACTION_PILOTE_AUTO_OFF, envelope);
-			SoapObject result = (SoapObject) envelope.getResponse();
 
 		} catch (Exception e) {
 			System.out.println("WS PILOTE AUTO OFF ERROR");
