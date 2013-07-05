@@ -36,7 +36,7 @@ public class ControllerActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_controller);
-		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 		this.buttonAvancer = (Button)findViewById(R.id.buttonAvancer);
 		this.buttonReculer = (Button)findViewById(R.id.buttonReculer);
 		this.buttonDroite = (Button)findViewById(R.id.buttonDroite);
@@ -54,7 +54,7 @@ public class ControllerActivity extends Activity {
 		this.buttonStop.setOnClickListener(new StopListener(this));
 		this.buttonAlignerRoues.setOnClickListener(new AlignerRouesListener(this));
 		this.buttonAutoPilote.setOnClickListener(new AutoPiloteListener(this));
-		this.seekBarPuissance .setOnSeekBarChangeListener(new SeekBarChangeListener(this));
+		this.seekBarPuissance.setOnSeekBarChangeListener(new SeekBarChangeListener(this));
 				
     }
 

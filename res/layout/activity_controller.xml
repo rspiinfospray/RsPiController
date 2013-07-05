@@ -12,11 +12,13 @@
         <SeekBar
             android:id="@+id/seekBarPuissance"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dip"
+            android:paddingTop="20dip" />
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp" >
+            android:layout_height="64dp" >
 
             <Button
                 android:id="@+id/buttonAvancer"
@@ -29,7 +31,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp" >
+            android:layout_height="65dp" >
 
             <Button
                 android:id="@+id/buttonGauche"
@@ -43,7 +45,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginRight="23dp"
                 android:text="@string/lbl_droite" />
 
             <Button
@@ -51,13 +52,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/buttonGauche"
+                android:layout_centerHorizontal="true"
                 android:text="@string/lbl_alignerRoues" />
+
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp" >
+            android:layout_height="65dp" >
 
             <ToggleButton
                 android:id="@+id/toggleButtonAuto"
