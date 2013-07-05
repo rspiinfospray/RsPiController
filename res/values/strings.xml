@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">RsPiController</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_controller">ControllerActivity</string>
+    <string name="lbl_avancer">Avancer</string>
+    <string name="lbl_reculer">Reculer</string>
+    <string name="lbl_droite">Droite</string>
+    <string name="lbl_gauche">Gauche</string>
+    <string name="lbl_puissance">Puissance</string>
+    <string name="lbl_auto">Pilote Auto</string>
+    <string name="lbl_stop">Stop</string>
+    <string name="lbl_alignerRoues">Aligner Roues</string>
+
+</resources>
