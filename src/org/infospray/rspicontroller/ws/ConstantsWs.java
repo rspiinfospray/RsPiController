@@ -6,7 +6,7 @@ public class ConstantsWs {
 		
 	}
 	
-	public static String	URL_WEBSERVICE = "http://192.168.0.11:8088/mockRsPiWsImplPortBinding";
+	public static String	URL_WEBSERVICE = "http://192.168.0.150/RsPiSrvWs";
 	
 	public static String	NAMESPACE = "http://ws.rspi.infospray.org/";
 	
