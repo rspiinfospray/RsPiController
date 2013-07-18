@@ -1,2 +1,3 @@
-Petit projet android permettant de creer une IHM basique simulant une télécommande
+Petit projet android permettant de creer une IHM basique simulant une tÃ©lÃ©commande
  fonctionnant en SOAP.
+ Fonctionne avec le projet RspiSrvWs(serveur de webservice).
